@@ -1,0 +1,62 @@
+.content{
+    
+    grid-area: main;
+    font-size:17px;
+    display: grid;
+    grid-template-rows: 2% 75%;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: "p p p"
+    "cd1 cd2 cd3";
+    /* border: 1px solid red; */
+    grid-gap: 4rem;
+}
+/* #content{
+    display: grid;
+    grid-template-rows: 2% 98%;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: "p p p"
+    "cd1 cd2 cd3";
+    border: 1px solid red;
+    grid-gap: 4rem;
+    
+} */
+.content p{
+    grid-area: p;
+    
+    margin-left:5px;
+}
+.content .card1{
+    grid-area: cd1;
+}
+.content .card2{
+    grid-area: cd2;
+}
+.content .card3{
+    grid-area: cd3;
+}
+
+.content .box{
+    width:100%;
+    
+    /* border: 1px solid magenta; */
+    box-sizing: border-box;
+    border-radius: 10px;
+    transition: transform 1s;
+    background-color: rgba(128, 128, 128, 0.144);
+    font-size: 15px;
+    
+}
+.content .box:hover{
+    transform: scale(1.1);
+}
+.content .box h2, p, article{
+    margin-left:5px;
+}
+
+.content .card1 h2{
+    color: #02b3e4;
+    padding-bottom: 10px;
+}
+.content .card2 h2, .card3 h2{
+    padding-bottom:10px;
+}

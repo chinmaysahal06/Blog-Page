@@ -1,0 +1,95 @@
+body{
+    background:rgb(252, 249, 249);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container{
+    display: flex;
+    /* flex-direction: column; */
+    flex-flow: column;
+    align-items: center;
+}
+
+.container .section-1, .section-2, .section-3, .section-4{
+    width: 85%;  
+    display: flex;
+    flex-direction: column;
+}
+
+.section-1 a{
+    text-decoration: none;
+    color: #02b3e4;
+    
+    font-size: 1.1rem;
+}
+.section-1 h1{
+    font-size: 3rem;
+    
+}
+.section-1 img{
+    width: 60px;
+    height: 60px;
+    
+    border-radius: 50%;
+    vertical-align: top;
+}
+.section-1 p{
+    display: inline-block;
+   margin-left:5px;
+   margin-bottom: 10px;
+}
+.section-1 .blockquote{
+    border-left: 3px solid black;
+    margin-bottom: 10px;
+}
+.section-1 .blockquote p{
+    color: #333;
+}
+
+.section-2{
+    width: 100%;
+}
+
+.section-2 img{
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;  
+}
+
+.section-3 h2, .section-4 h2{
+    font-size: 40px;
+    font-weight: 400;
+    
+}
+.section-3 p{
+    margin-left: 5px;
+}
+.section-3 .blockquote-2{
+    width: auto;
+    border-left: 3px solid #02b3e4;
+    background-color: rgb(233, 231, 231);
+}
+.section-3 .blockquote-2 p{
+    margin-left: 20px;
+}
+
+.section-3 ul li, .section-4 ol li{
+    margin-left: -20px;
+    margin-bottom: 10px;
+    text-align: left;
+} 
+.section-4 ul{
+    text-align: center;
+}
+.section-4 ul li{
+    margin: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    list-style: none;
+    display: inline-block;
+    
+}
+.section-4 ul li a{
+    text-decoration: none;
+    color: #02b3e4;
+}
